@@ -1,0 +1,5 @@
+name: flutter_yoco
+
+packages:
+  - example/**
+  - lib/**

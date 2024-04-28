@@ -1,11 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_yoco/src/controllers/flutter_yoco_controller.dart';
-import 'package:flutter_yoco/src/models/yoco_payment.dart';
-import 'package:flutter_yoco/src/models/yoco_transaction.dart';
-import 'package:flutter_yoco/src/widgets/flutter_yoco_linear_loading_indicator.dart';
-import 'package:flutter_yoco/src/widgets/flutter_yoco_status.dart';
-import 'package:flutter_yoco/src/widgets/flutter_yoco_web_view.dart';
+import 'package:flutter_yoco/src/ui/controllers/flutter_yoco_controller.dart';
+import 'package:flutter_yoco/src/data/models/yoco_payment.dart';
+import 'package:flutter_yoco/src/data/models/yoco_transaction.dart';
+import 'package:flutter_yoco/src/ui/widgets/status.dart';
+import 'package:flutter_yoco/src/ui/widgets/web_view.dart';
 
 // dart format lib/src/widgets/flutter_yoco.dart
 
@@ -109,7 +108,7 @@ class _FlutterYocoState extends State<FlutterYoco> {
         mainAxisSize: MainAxisSize.min,
         children: [
           // Linear loading indicator reflecting current transaction progress.
-          FlutterYocoLinearLoadingIndicator(progress: progress),
+          _LoadingIndicator(progress: progress),
 
           // Conditional logic to decide what to show based on the state.
 
@@ -198,5 +197,18 @@ class _FlutterYocoState extends State<FlutterYoco> {
         widget.onComplete!(transaction);
       }
     }
+  }
+}
+
+class _LoadingIndicator extends StatelessWidget {
+  const _LoadingIndicator({required this.progress});
+  final int progress;
+  @override
+  Widget build(BuildContext context) {
+    return LinearProgressIndicator(
+      value: progress / 100,
+      backgroundColor: Colors.transparent,
+      color: Colors.blue,
+    );
   }
 }

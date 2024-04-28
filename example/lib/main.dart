@@ -90,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         children: [
           FlutterYoco(
-            secretKey: 'sk_test_ddsdsdfsdfeeewe4ewrwer',
+            secretKey: 'pk_test_521d1f19z6w2MGkc06a4',
             amount: 100,
             transactionId: 1000070.toString(),
             successUrl: 'https://url.com/success/',

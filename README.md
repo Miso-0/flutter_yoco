@@ -48,7 +48,7 @@ android {
 
 ## Installation
 
-To get started, add `flutter_ozow` to your `pubspec.yaml` file:
+To get started, add `flutter_yoco` to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:

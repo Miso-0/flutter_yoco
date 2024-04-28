@@ -1,4 +1,4 @@
-import 'package:flutter_yoco/src/models/yoco_payment.dart';
+import 'package:flutter_yoco/src/data/models/yoco_payment.dart';
 
 // dart format lib/src/models/yoco_transaction.dart
 enum YocoTransactionStatus {
