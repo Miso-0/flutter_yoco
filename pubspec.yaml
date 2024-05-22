@@ -1,6 +1,6 @@
 name: flutter_yoco
 description: A simple flutter plugin to integrate Yoco payment gateway into your flutter app.
-version: 1.0.1
+version: 1.0.2
 repository: 'https://github.com/Miso-0/flutter_yoco.git'
 
 environment:
