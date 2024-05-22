@@ -35,11 +35,12 @@ class FlutterYocoStatus extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(top: 20, left: 20, right: 20),
           child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(
                 height: 30,
                 child: Image.asset(
-                  'assets/yoc_logo.png',
+                  'assets/yoco.png',
                   package: "flutter_yoco",
                 ),
               ),
@@ -49,7 +50,7 @@ class FlutterYocoStatus extends StatelessWidget {
         const SizedBox(height: 60),
         SizedBox(
           height: 120,
-          child: Image.network(statusData().imagePath),
+          child: Image.asset(statusData().imagePath, package: "flutter_yoco"),
         ),
         const SizedBox(height: 20),
         Text(

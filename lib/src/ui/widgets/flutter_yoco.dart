@@ -103,8 +103,8 @@ class _FlutterYocoState extends State<FlutterYoco> {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Column(
+    return Scaffold(
+      body: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
           // Linear loading indicator reflecting current transaction progress.
