@@ -26,6 +26,7 @@ flutter:
     - packages/flutter_yoco/assets/checked.png
     - packages/flutter_yoco/assets/warning.png
     - packages/flutter_yoco/assets/yoc_logo.png
+    - packages/flutter_yoco/assets/yoco.png
 
 platforms:
   android:
