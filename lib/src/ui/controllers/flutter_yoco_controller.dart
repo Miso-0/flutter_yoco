@@ -93,14 +93,16 @@ class FlutterYocoController {
 
   Future<YocoPayment?> createPayment() async {
     final dio = Dio();
+    final amount_in_cents = widget.amount * 100;
     final body = {
-      "amount": widget.amount,
+      "amount": amount_in_cents,
       "currency": "ZAR",
       "externalId": widget.transactionId,
       "successUrl": widget.successUrl,
       "cancelUrl": widget.cancelUrl,
       "failureUrl": widget.failureUrl,
     };
+    print('Flutter_yoco: ${body}');
     dio.options.headers["Authorization"] = "Bearer ${widget.secretKey}";
     dio.options.headers["Content-Type"] = "application/json";
     const url = 'https://payments.yoco.com/api/checkouts';
