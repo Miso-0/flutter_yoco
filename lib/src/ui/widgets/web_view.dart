@@ -8,8 +8,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_yoco/src/ui/controllers/flutter_yoco_controller.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-// dart format lib/src/widgets/flutter_yoco_web_view.dart
-
 /// A webview widget that paints the payment page.
 class FlutterYocoWebView extends StatelessWidget {
   const FlutterYocoWebView({super.key, required this.yocoController});

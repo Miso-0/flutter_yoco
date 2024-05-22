@@ -1,8 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_yoco/src/ui/controllers/flutter_yoco_controller.dart';
-import 'package:flutter_yoco/src/data/models/yoco_payment.dart';
-import 'package:flutter_yoco/src/data/models/yoco_transaction.dart';
+import 'package:flutter_yoco/src/types/yoco_payment.dart';
+import 'package:flutter_yoco/src/types/yoco_transaction.dart';
 import 'package:flutter_yoco/src/ui/widgets/status.dart';
 import 'package:flutter_yoco/src/ui/widgets/web_view.dart';
 

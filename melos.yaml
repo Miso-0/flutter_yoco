@@ -1,5 +1,27 @@
 name: flutter_yoco
 
 packages:
-  - example/**
-  - lib/**
+  - example/
+
+scripts:
+  analyze: >
+    melos exec -c 1 -- \
+      flutter analyze --fatal-infos .
+  format:
+    description: Format code
+    exec: dart format --set-exit-if-changed .
+  cleanup:
+    exec: flutter clean
+    description: Cleans and gets dependencies
+  get:
+    exec: dart pub get
+    description: Gets dependencies
+  generate:
+    exec: dart pub run build_runner build --delete-conflicting-outputs
+  test:
+    exec: dart test
+    description: Run tests
+
+  dependencies_upgrade:
+    exec: flutter pub upgrade --major-versions
+    description: Run pub upgrade

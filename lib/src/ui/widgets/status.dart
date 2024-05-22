@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_yoco/src/data/models/yoco_transaction.dart';
+import 'package:flutter_yoco/src/types/yoco_transaction.dart';
 
 class FlutterYocoStatus extends StatelessWidget {
   const FlutterYocoStatus({super.key, required this.status});
@@ -35,7 +35,7 @@ class FlutterYocoStatus extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(top: 20, left: 20, right: 20),
           child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(
                 height: 30,

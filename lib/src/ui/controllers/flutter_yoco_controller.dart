@@ -1,7 +1,7 @@
 import 'dart:ui';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter_yoco/src/data/models/yoco_payment.dart';
+import 'package:flutter_yoco/src/types/yoco_payment.dart';
 import 'package:flutter_yoco/src/ui/widgets/flutter_yoco.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
@@ -122,6 +122,7 @@ class FlutterYocoController {
         widget.successUrl != widget.failureUrl &&
         widget.cancelUrl != widget.failureUrl;
   }
+
   bool endsWithSlash(String url) {
     return url.endsWith('/');
   }
